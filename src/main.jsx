@@ -1,7 +1,8 @@
 import ReactDOM from 'react-dom/client'
+import {RouterProvider} from 'react-router-dom'
+import {router} from './09-useContext/Router'
 import './index.css'
-import TodoApp from './08-useReducer/TodoApp'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <TodoApp/>
+  <RouterProvider router={router} />
   )
